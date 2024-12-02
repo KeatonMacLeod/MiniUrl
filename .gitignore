@@ -1,0 +1,28 @@
+# Ignore build outputs
+**/bin/
+**/obj/
+**/objd/
+
+# Ignore user-specific files
+MiniUrl/*.rsuser
+MiniUrl/*.suo
+MiniUrl/*.user
+MiniUrl/*.userosscache
+MiniUrl/*.sln.docstates
+MiniUrl/*.csproj.user
+
+# Ignore IDE-specific directories
+MiniUrl/.vs/
+MiniUrl/.vscode/
+MiniUrlTests/.vs/
+MiniUrlTests/.vscode/
+
+# Ignore SQLite database files
+MiniUrl/Data/SQLiteDatabase.db
+
+# Ignore local configuration files
+MiniUrl/Properties/serviceDependencies.local.json
+MiniUrl/Properties/serviceDependencies.local.json.user
+
+# Ignore package directories
+MiniUrl/wwwroot/lib

@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center margin-top-med">
+    <div class="container">
+        <h1 class="display-4">Mini Url</h1>
+    </div>
+
+    @using (Html.BeginForm("ShrinkUrl", "Home", FormMethod.Post))
+    {
+        <input type="text" name="url" class="container margin-top-med" id="userInputUrlForm" placeholder="Input your LONG URL here..." />
+        <button type="submit" class="container margin-top-med" id="urlSubmitButton">Submit</button>
+    }
+
+    <div id="miniUrlForm" class="container margin-top-med">
+        @if (ViewBag.Result != null)
+        {
+            <p>@ViewBag.Result</p>
+        }
+    </div>
+</div>
