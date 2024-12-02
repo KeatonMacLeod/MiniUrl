@@ -55,7 +55,7 @@ namespace MiniUrl.Controllers
                 databaseContext.SaveChanges();
             }
 
-            ViewBag.Result = hashedUrl;
+            ViewBag.Result = string.Format("{0}{1}", "http://localhost:5297/", hashedUrl);
             return View(Constants.INDEX_PAGE_NAME);
         }
 
